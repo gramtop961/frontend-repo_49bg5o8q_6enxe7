@@ -4,7 +4,6 @@ const navItems = [
   { to: '/membership', label: 'Membership' },
   { to: '/aircraft', label: 'Aircraft Access' },
   { to: '/experience', label: 'Experience' },
-  { to: '/accessibility', label: 'Mobility' },
   { to: '/about', label: 'About' },
   { to: '/faq', label: 'FAQ' },
   { to: '/contact', label: 'Contact' },
