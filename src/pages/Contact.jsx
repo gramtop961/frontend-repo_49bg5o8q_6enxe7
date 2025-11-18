@@ -25,16 +25,15 @@ export default function Contact() {
 
   return (
     <main className="pt-24 pb-16 bg-white">
-      <div className="relative">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src="https://images.unsplash.com/photo-1542282811-943ef1a977c3?q=80&w=2400&auto=format&fit=crop"
-            alt="Private terminal lounge"
-            className="w-full h-64 object-cover"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 h-64 bg-gradient-to-b from-slate-900/70 to-white" />
-        </div>
+      <div className="relative h-64">
+        <img
+          src="https://images.unsplash.com/photo-1504197639813-76941188ec1b?q=80&w=2400&auto=format&fit=crop"
+          alt="Private jet on ramp at dusk"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=2400&auto=format&fit=crop' }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 to-white" />
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-5">
@@ -43,10 +42,11 @@ export default function Contact() {
             <p className="mt-3 text-slate-200 md:text-slate-600">Share your route, dates, and preferences. We respond quickly and discreetly.</p>
             <div className="hidden md:block mt-6 rounded-xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1528763380143-65b3acb2ec07?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1548883354-7622d3f3cd48?q=80&w=1200&auto=format&fit=crop"
                 alt="Cabin detail"
                 className="w-full h-56 object-cover"
                 loading="lazy"
+                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=1200&auto=format&fit=crop' }}
               />
             </div>
           </div>
