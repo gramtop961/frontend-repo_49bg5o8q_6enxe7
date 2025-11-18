@@ -9,7 +9,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        {/* Use wildcard so nested routes inside App work (e.g., /membership, /aircraft, etc.) */}
+        <Route path="/*" element={<App />} />
         <Route path="/test" element={<Test />} />
       </Routes>
     </BrowserRouter>

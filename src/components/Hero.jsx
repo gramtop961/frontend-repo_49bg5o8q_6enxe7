@@ -1,23 +1,23 @@
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-24 sm:pt-28">
-      {/* Background image with art-directed sources */}
+      {/* Background image with art-directed sources — all aviation themed */}
       <div className="absolute inset-0">
         <picture>
-          {/* Large screens: dusk runway with aircraft silhouette */}
+          {/* Large screens: private jet on runway at dusk */}
           <source
             media="(min-width: 1024px)"
-            srcSet="https://images.unsplash.com/photo-1503181092439-d7b31f0b2e69?q=80&w=2400&auto=format&fit=crop"
+            srcSet="https://images.unsplash.com/photo-1541987392-707e1b3c274a?q=80&w=2400&auto=format&fit=crop"
           />
-          {/* Tablets: cabin detail */}
+          {/* Tablets: private jet cabin detail */}
           <source
             media="(min-width: 640px)"
-            srcSet="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1600&auto=format&fit=crop"
+            srcSet="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5a?q=80&w=1600&auto=format&fit=crop"
           />
           {/* Mobile fallback: wing over clouds */}
           <img
             src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1200&auto=format&fit=crop"
-            alt="A refined private aviation scene: aircraft, runway, and sky at golden hour"
+            alt="Private jet at golden hour with elegant cabin and wing detail"
             className="w-full h-full object-cover"
             loading="eager"
             fetchpriority="high"
@@ -31,7 +31,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="min-h-[70vh] sm:min-h-[72vh] lg:min-h-[78vh] flex items-center">
+        <div className="min-h-[70vh] sm:min_h-[72vh] lg:min-h-[78vh] flex items-center">
           <div className="max-w-3xl text-white">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight">
               Private aviation, refined for the way you move
