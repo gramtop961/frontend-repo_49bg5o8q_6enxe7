@@ -31,3 +31,34 @@ export function CTA() {
     </section>
   )
 }
+
+export function SafetyStrip() {
+  return (
+    <section className="py-10 bg-slate-50 border-y border-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-6 md:grid-cols-3 items-start">
+          <div>
+            <p className="text-xs uppercase tracking-wider text-slate-500">Safety & Standards</p>
+            <h3 className="mt-2 text-xl font-semibold text-slate-900">Audited operators. Verified on every trip.</h3>
+            <p className="mt-2 text-slate-600">We partner with vetted air carriers and crews who meet rigorous third‑party standards. Credentials and crew currency are verified before departure.</p>
+          </div>
+          <div className="md:col-span-2 grid gap-4 sm:grid-cols-2">
+            <Bullet title="Operational compliance" text="Part 135/121 where applicable; documentation reviewed prior to flight." />
+            <Bullet title="Experienced crews" text="Type‑rated pilots with current training and recency." />
+            <Bullet title="Cabin preparedness" text="Catering, amenities, and preferences set ahead of arrival." />
+            <Bullet title="Discretion" text="Private handling and minimal touchpoints throughout the journey." />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Bullet({ title, text }) {
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+      <div className="text-sm font-semibold text-slate-900">{title}</div>
+      <div className="mt-1 text-sm text-slate-600">{text}</div>
+    </div>
+  )
+}

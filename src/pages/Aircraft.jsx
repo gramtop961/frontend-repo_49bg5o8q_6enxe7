@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { SectionHeading, Card } from '../components/Sections'
+import { SectionHeading, Card, SafetyStrip } from '../components/Sections'
 
 // Category taxonomy reflects common industry groupings
 // VLJ < Light < Super Light < Midsize < Super Midsize < Heavy < Ultra‑Long‑Range
@@ -85,7 +85,7 @@ function Models({ items }) {
 
 export default function Aircraft() {
   return (
-    <main className="pt-24 pb-16 bg-white">
+    <main className="pt-24 pb-0 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Aircraft Access"
@@ -118,6 +118,9 @@ export default function Aircraft() {
             </Card>
           ))}
         </div>
+      </div>
+      <div className="mt-16">
+        <SafetyStrip />
       </div>
     </main>
   )

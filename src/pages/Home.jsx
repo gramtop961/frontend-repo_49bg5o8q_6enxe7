@@ -1,5 +1,5 @@
 import Hero from '../components/Hero'
-import { SectionHeading, Card, CTA } from '../components/Sections'
+import { SectionHeading, Card, CTA, SafetyStrip } from '../components/Sections'
 
 export default function Home() {
   return (
@@ -27,6 +27,8 @@ export default function Home() {
           </Card>
         </div>
       </section>
+
+      <SafetyStrip />
 
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
